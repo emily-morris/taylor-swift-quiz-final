@@ -19,6 +19,7 @@ header {
 	width: 100%;
 	display: inline-block;
 	text-align: right;
+	background-color: 
 }
 
 h1 {
@@ -50,7 +51,7 @@ button {
 	max-width: 200px;
 }
 
-fieldset {
+fieldset, legend {
 	border: 0;
 	background-color: black;
 }
@@ -81,14 +82,15 @@ fieldset {
 }
 
 .counter ul {
+	color: floralwhite;
+	background-color: darkred;
 	list-style-type: none;
-	text-align: right;
-	padding: 15px;
-	color: steelblue;
+	text-align: center;
+	padding: 7px;
 	font-size: 1.36em;
 	letter-spacing: 1px;
 	font-weight: bolder;
-	height: 105px;
+	height: 65px;
 }
 
 .startButtonDiv,

@@ -20,7 +20,7 @@
 			</button>
 		</div>
 	</section>
-	<header>
+	<header role="banner">
 		<div class="counter">
 			<ul>
 				<li>QUESTION: <span id="questionCount">0</span>/10</li>
@@ -28,11 +28,11 @@
 			</ul>
 		</div>
 	</header>
-	<section id="questionPage" role="questions">
+	<section id="questionPage" role="complementary">
 		<p id="questionText"></p>
 		<form class="questionAnswerForm">
 			<fieldset>
-        <legend></legend>
+        <legend>Please select an answer:</legend>
 			  <div class="answerChoice">
 				<input type="radio" id="option1" name="answers" value="a" required />
 				<label for="option1">a) <span id="label1"></span></label>
@@ -57,7 +57,7 @@
 			</button>
 		</div>
 	</section>
-	<section id="feedbackPage" role="feedback">
+	<section id="feedbackPage" role="complementary">
 		<p id="feedbackText"></p>
 		<div class="nextButtonDiv">
 			<button id="nextButton">
@@ -65,7 +65,7 @@
 			</button>
 		</div>
 	</section>
-	<section id="resultPage" role="results">
+	<section id="resultPage" role="complementary">
 		<div class="finalScore">
 			<h1 id="finalScoreText">Score goes here</h1>
 		</div>
