@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+	background: url("https://pixel.nymag.com/imgs/daily/vulture/2017/11/10/10-taylor-swift.w710.h473.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	display: inline-block;
+	text-align: right;
+}
+
+h1 {
+	padding: 4px;
+}
+
+h1,
+h2 {
+	text-align: center;
+	margin-top: 390px;
+	color: floralwhite;
+	letter-spacing: 9.5px;
+	font-size: 2.3em;
+	font-weight: bolder;
+	background-color: black;
+	width: 100%;
+}
+
+button {
+	background-color: floralwhite;
+	margin: auto;
+	width: 120px;
+	display: block;
+	min-height: 80px;
+	min-width: 80px;
+	margin-bottom: 2em;
+	border: none;
+	border-radius: 5px;
+	max-width: 200px;
+}
+
+fieldset {
+	border: 0;
+	background-color: black;
+}
+
+.quizTitle,
+.finalScore {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.buttonText {
+	color: black;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+
+.counter {
+	height: 105px;
+}
+
+.questionAnswerForm {
+	color: floralwhite;
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 15px;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+.counter ul {
+	list-style-type: none;
+	text-align: right;
+	padding: 15px;
+	color: steelblue;
+	font-size: 1.36em;
+	letter-spacing: 1px;
+	font-weight: bolder;
+	height: 105px;
+}
+
+.startButtonDiv,
+.submitButtonDiv,
+.nextButtonDiv,
+.restartButtonDiv {
+	margin-top: 200px;
+}
+
+#restartButton {
+	margin-top: 108px;
+}
+
+#startPage,
+#questionPage,
+#feedbackPage,
+#resultPage {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#questionText,
+#feedbackText {
+	margin-top: 260px;
+}
+
+
+#finalScoreText,
+#questionText,
+#feedbackText,
+#resultMessage {
+	text-align: center;
+	color: floralwhite;
+	letter-spacing: 9.5px;
+	font-size: 2.3em;
+	font-weight: bolder;
+	background-color: black;
+	padding: 10px;
+	width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+	.xs-col-12 {
+	  width: 100%;
+	}
+	.buttonText {
+		font-size: 1.3em;
+	}
+	.counter {
+		display: flex;
+		justify-content: flex-end;
+	}
+	#questionPage,
+	#feedbackPage,{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	fieldset {
+	  display: flex;
+	  flex-direction: column;
+	}
+	.answerChoice {
+	  flex-direction: row;
+	  align-items: baseline;
+	}
+	.answerChoice input {
+	  flex: 2;
+	}
+	.answerChoice label {
+	  flex: 3;
+	}
+}
+
+@media only screen and (min-width: 650px) {
+	.sm-col-12 {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+	.quizTitle,
+	.finalScore {
+		margin-top: 100px;
+	}
+	#questionPage,
+	#feedbackPage {
+		margin-top: 200px;
+	}
+}
